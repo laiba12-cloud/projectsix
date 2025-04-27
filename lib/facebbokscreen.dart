@@ -11,475 +11,677 @@ class _FaceBookScreenState extends State<FaceBookScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor:Colors.white,
+      floatingActionButton: Column(
+        mainAxisAlignment: MainAxisAlignment.end,
+        children: [
+          FloatingActionButton(
+            backgroundColor: Colors.white,
+            onPressed:(){
+
+            },
+            child:Icon(Icons.edit,color:Colors.black,),
+          ),
+          SizedBox(height:10),
+          FloatingActionButton(
+            backgroundColor: Colors.green,
+            onPressed:(){
+
+          },
+          child:Icon(Icons.add_a_photo_outlined,color:Colors.white,size:30),)
+        ],
+      ),
       appBar:
       AppBar(
         backgroundColor: Colors.white,
         actions:[
-          SizedBox(width:500),
-          Icon(Icons.add,color:Colors.black,),
-          SizedBox(width:50),
+
+          Icon(Icons.search,color:Colors.black,),
+          SizedBox(width:20),
           Icon(Icons.more_vert,color:Colors.black,),
           SizedBox(width:20),
         ],
         title:Text(
-          'FaceBook',style:TextStyle(
+          'Updates',style:TextStyle(
           color:Colors.black,
-          fontWeight:FontWeight.bold,fontSize:30,
+          fontWeight:FontWeight.bold,fontSize:20,
         ),
         ),
         centerTitle:false,
       ),
       body:SingleChildScrollView(
+        scrollDirection:Axis.vertical,
         child:Column(
-          mainAxisAlignment:MainAxisAlignment.start,
           children: [
-            Row
-              (
-              children:
-              [
-                Row
-                  (
-                  children: [
-                    CircleAvatar(
-                      radius:40,
-                      backgroundImage:AssetImage(
-                        'assets/awesome.jpg',
-                      ),
-                      child:Column(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          Icon(Icons.add_circle,color:Colors.green),
-                        ],
-                      ),
-                    ),
-                    SizedBox(width:15),
-                    Column(
-                      children:[
-                        Row(
-                          children:[
-                            Text(
-                              'My Status',style:TextStyle(
-                              color:Colors.black,fontWeight:FontWeight.bold,
-                              fontSize:20,
-                            ),
-                            ),
-                          ],
-                        ),
-
-                        SizedBox(height:5),
-                        Row
-                          (
-                          children:[
-                            SizedBox(width:30),
-                            Text(
-                                'click to add status update',
+               Row(
+                 children:[
+                   SizedBox(width:15),
+                   Text('Status',style:TextStyle(
+                 color:Colors.black,
+                 fontSize:30,
+                 fontWeight:FontWeight.bold,
+               ),),
+                 ],
+               ),
+                Divider(thickness:0.5,color:Colors.grey,),
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(5.0),
+                        child: Container(
+                            height:160,
+                            width:90,
+                            decoration: BoxDecoration(
+                              color:Colors.black,
+                             borderRadius:BorderRadius.circular(10),
+                             image:DecorationImage(image: AssetImage('assets/awesome.jpg'),fit:BoxFit.cover,
+                            ),),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              children:[
+                                CircleAvatar(
+                                    radius:20,
+                                    backgroundImage: AssetImage('assets/girl2.jpg'),
+                                  ),
+                                Spacer(),
+                                Text('My Status',
                                 style:TextStyle(
-                                  color:Colors.blueGrey,
-                                  fontSize:10,
-                                )
+                                  color:Colors.white,fontWeight:FontWeight.bold,
+                                  fontSize:15,
+                                )),
+                                SizedBox(height:20),
+        ],
+        ),
                             ),
-                          ],
                         ),
-                      ],
+
+                      Padding(
+                        padding: const EdgeInsets.all(5.0),
+                        child: Container(
+                          height:160,
+                          width:90,
+                          decoration: BoxDecoration(
+                            color:Colors.black,
+                            borderRadius:BorderRadius.circular(10),
+                            image:DecorationImage(image: AssetImage('assets/awesome.jpg'),fit:BoxFit.cover,
+                            ),),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children:[
+                              CircleAvatar(
+                                radius:20,
+                                backgroundImage: AssetImage('assets/girl2.jpg'),
+                              ),
+                              Spacer(),
+                              Text('My Story',
+                                  style:TextStyle(
+                                    color:Colors.white,fontWeight:FontWeight.bold,
+                                    fontSize:15,
+                                  )),
+                              SizedBox(height:20),
+                            ],
+                          ),
+                        ),
+                      ),
+
+
+
+                      Padding(
+                        padding: const EdgeInsets.all(5.0),
+                        child: Container(
+                          height:160,
+                          width:90,
+                          decoration: BoxDecoration(
+                            color:Colors.black,
+                            borderRadius:BorderRadius.circular(10),
+                            image:DecorationImage(image: AssetImage('assets/awesome.jpg'),fit:BoxFit.cover,
+                            ),),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children:[
+                              CircleAvatar(
+                                radius:20,
+                                backgroundImage: AssetImage('assets/girl2.jpg'),
+                              ),
+                              Spacer(),
+                              Text('My Story',
+                                  style:TextStyle(
+                                    color:Colors.white,fontWeight:FontWeight.bold,
+                                    fontSize:15,
+                                  )),
+                              SizedBox(height:20),
+                            ],
+                          ),
+                        ),
+                      ),
+
+
+                      Padding(
+                        padding: const EdgeInsets.all(5.0),
+                        child: Container(
+                          height:160,
+                          width:90,
+                          decoration: BoxDecoration(
+                            color:Colors.black,
+                            borderRadius:BorderRadius.circular(10),
+                            image:DecorationImage(image: AssetImage('assets/awesome.jpg'),fit:BoxFit.cover,
+                            ),),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children:[
+                              CircleAvatar(
+                                radius:20,
+                                backgroundImage: AssetImage('assets/girl2.jpg'),
+                              ),
+                              Spacer(),
+                              Text('My Story',
+                                  style:TextStyle(
+                                    color:Colors.white,fontWeight:FontWeight.bold,
+                                    fontSize:15,
+                                  )),
+                              SizedBox(height:20),
+                            ],
+                          ),
+                        ),
+                      ),
+
+
+                      Padding(
+                        padding: const EdgeInsets.all(5.0),
+                        child: Container(
+                          height:160,
+                          width:90,
+                          decoration: BoxDecoration(
+                            color:Colors.black,
+                            borderRadius:BorderRadius.circular(10),
+                            image:DecorationImage(image: AssetImage('assets/awesome.jpg'),fit:BoxFit.cover,
+                            ),),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children:[
+                              CircleAvatar(
+                                radius:20,
+                                backgroundImage: AssetImage('assets/girl2.jpg'),
+                              ),
+                              Spacer(),
+                              Text('My Story',
+                                  style:TextStyle(
+                                    color:Colors.white,fontWeight:FontWeight.bold,
+                                    fontSize:15,
+                                  )),
+                              SizedBox(height:20),
+                            ],
+                          ),
+                        ),
+                      ),
+
+                      Padding(
+                        padding: const EdgeInsets.all(5.0),
+                        child: Container(
+                          height:160,
+                          width:90,
+                          decoration: BoxDecoration(
+                            color:Colors.black,
+                            borderRadius:BorderRadius.circular(10),
+                            image:DecorationImage(image: AssetImage('assets/awesome.jpg'),fit:BoxFit.cover,
+                            ),),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children:[
+                              CircleAvatar(
+                                radius:20,
+                                backgroundImage: AssetImage('assets/girl2.jpg'),
+                              ),
+                              Spacer(),
+                              Text('My Story',
+                                  style:TextStyle(
+                                    color:Colors.white,fontWeight:FontWeight.bold,
+                                    fontSize:15,
+                                  )),
+                              SizedBox(height:20),
+                            ],
+                          ),
+                        ),
+                      ),
+
+                      Padding(
+                        padding: const EdgeInsets.all(5.0),
+                        child: Container(
+                          height:160,
+                          width:90,
+                          decoration: BoxDecoration(
+                            color:Colors.black,
+                            borderRadius:BorderRadius.circular(10),
+                            image:DecorationImage(image: AssetImage('assets/awesome.jpg'),fit:BoxFit.cover,
+                            ),),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children:[
+                              CircleAvatar(
+                                radius:20,
+                                backgroundImage: AssetImage('assets/girl2.jpg'),
+                              ),
+                              Spacer(),
+                              Text('My Story',
+                                  style:TextStyle(
+                                    color:Colors.white,fontWeight:FontWeight.bold,
+                                    fontSize:15,
+                                  )),
+                              SizedBox(height:20),
+                            ],
+                          ),
+                        ),
+                      ),
+
+                      Padding(
+                        padding: const EdgeInsets.all(5.0),
+                        child: Container(
+                          height:160,
+                          width:90,
+                          decoration: BoxDecoration(
+                            color:Colors.black,
+                            borderRadius:BorderRadius.circular(10),
+                            image:DecorationImage(image: AssetImage('assets/awesome.jpg'),fit:BoxFit.cover,
+                            ),),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children:[
+                              CircleAvatar(
+                                radius:20,
+                                backgroundImage: AssetImage('assets/girl2.jpg'),
+                              ),
+                              Spacer(),
+                              Text('My Story',
+                                  style:TextStyle(
+                                    color:Colors.white,fontWeight:FontWeight.bold,
+                                    fontSize:15,
+                                  )),
+                              SizedBox(height:20),
+                            ],
+                          ),
+                        ),
+                      ),
+
+                      Padding(
+                        padding: const EdgeInsets.all(5.0),
+                        child: Container(
+                          height:160,
+                          width:90,
+                          decoration: BoxDecoration(
+                            color:Colors.black,
+                            borderRadius:BorderRadius.circular(10),
+                            image:DecorationImage(image: AssetImage('assets/awesome.jpg'),fit:BoxFit.cover,
+                            ),),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children:[
+                              CircleAvatar(
+                                radius:20,
+                                backgroundImage: AssetImage('assets/girl2.jpg'),
+                              ),
+                              Spacer(),
+                              Text('My Story',
+                                  style:TextStyle(
+                                    color:Colors.white,fontWeight:FontWeight.bold,
+                                    fontSize:15,
+                                  )),
+                              SizedBox(height:20),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+
+                ListTile(
+                  leading:Text('Channels',style:TextStyle(
+                    color:Colors.black,fontSize:20,
+                    fontWeight:FontWeight.bold,
+                  ),),
+                  trailing:Container(
+                    height:20,
+                    width:80,
+                    decoration: BoxDecoration(
+                      color:Colors.grey,
+                      borderRadius:BorderRadius.circular(10),
                     ),
-                  ],
+                    child:Center(child:Text('Explore',style:TextStyle(
+                      color:Colors.black,
+                      fontWeight:FontWeight.bold,
+                    ),),
+                    ),
+                  ),
                 ),
-
-              ],
-            ),
-
-            Divider(thickness:5,color:Colors.grey,),
-            Row(
-              children:[
-                SizedBox(width:50),
-                Text(
-                  'RECENT',style:TextStyle(
-                  color:Colors.green,fontSize:30,fontWeight:FontWeight.bold,
-                ),
-                )
-              ],
-            ),
-            Divider(thickness:0.5,color:Colors.grey,),
-            Row(
-              children:[
-                Row(
-                  children:[
-                    CircleAvatar(
+                Card(
+                  child:ListTile(
+                    leading:CircleAvatar(
                       radius:20,
-                      backgroundImage:AssetImage('assets/beutifull.jpg'),
+                      backgroundImage:AssetImage('assets/girl3.jpg'),
                     ),
-                  ],
+                    title:Text(
+                      'Ayesha',style:TextStyle(
+                      color:Colors.black,
+                      fontSize:20,
+                      fontWeight:FontWeight.bold,
+                    ),
+                    ),
+                    subtitle: Text(
+                      'today at 4:30am',
+                    ),
+                    trailing:CircleAvatar(
+                      radius:15,
+                      backgroundColor: Colors.red,
+                      child:Text('3',style:TextStyle(
+                        color:Colors.black,
+                        fontSize:10,
+                      ),),
+                    ),
+                  ),
                 ),
-                Column(
-                  children:[
-                    Row(
-                      children:[
-                        SizedBox(width:10),
-                        Text(
-                          'Shazii',style:TextStyle(
-                          color:Colors.black,fontWeight:FontWeight.bold,
-                          fontSize:20,
-                        ),
-                        ),
-                      ],
-                    ),
-                    SizedBox(height:5),
-                    Row(
-                      children:[
-                        SizedBox(width:40),
-                        Text(
-                          'today at 4:34',style:TextStyle(
-                          color:Colors.grey,fontSize:20,
-                        ),
-                        ),
-                      ],
-                    ),
-                  ],
-                ),
-              ],
-            ),
-            Divider(thickness:0.5,color:Colors.grey,),
-            Row(
-              children:[
-                Row(
-                  children:[
-                    CircleAvatar(
+                Card(
+                  child:ListTile(
+                    leading:CircleAvatar(
                       radius:20,
                       backgroundImage:AssetImage('assets/girl2.jpg'),
                     ),
-                  ],
-                ),
-                Column(
-                  children:[
-                    Row(
-                      children:[
-                        SizedBox(width:10),
-                        Text(
-                          'Farzana Atif',style:TextStyle(
-                          color:Colors.black,fontWeight:FontWeight.bold,
-                          fontSize:20,
-                        ),
-                        ),
-                      ],
+                    title:Text(
+                      'Aleezy',style:TextStyle(
+                      color:Colors.black,
+                      fontSize:20,
+                      fontWeight:FontWeight.bold,
                     ),
-                    SizedBox(height:5),
-                    Row(
-                      children:[
-                        SizedBox(width:40),
-                        Text(
-                          'today at 5:03',style:TextStyle(
-                          color:Colors.grey,fontSize:20,
-                        ),
-                        ),
-                      ],
                     ),
-                  ],
+                    subtitle: Text(
+                      'today at 4:30am',
+                    ),
+                    trailing:CircleAvatar(
+                      radius:15,
+                      backgroundColor: Colors.red,
+                      child:Text('3',style:TextStyle(
+                        color:Colors.black,
+                        fontSize:10,
+                      ),),
+                    ),
+                  ),
                 ),
-              ],
-            ),
-            Divider(thickness:0.5,color:Colors.grey,),
-            Row(
-              children:[
                 Row(
                   children:[
-                    CircleAvatar(
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text(
+                        'Find Channels to follow',style:TextStyle(
+                        color:Colors.black,fontSize:15,
+                        fontWeight:FontWeight.bold,
+                      ),
+                      ),
+                    ),
+                  ],
+                ),
+                Card(
+                  child:ListTile(
+                    leading:CircleAvatar(
                       radius:20,
                       backgroundImage:AssetImage('assets/girl5.jpg'),
                     ),
-                  ],
-                ),
-                Column(
-                  children:[
-                    Row(
-                      children:[
-                        SizedBox(width:10),
-                        Text(
-                          'Sabuu',style:TextStyle(
-                          color:Colors.black,fontWeight:FontWeight.bold,
-                          fontSize:20,
-                        ),
-                        ),
-                      ],
+                    title:Text(
+                      'Sabuu',style:TextStyle(
+                      color:Colors.black,
+                      fontSize:20,
+                      fontWeight:FontWeight.bold,
                     ),
-                    SizedBox(height:5),
-                    Row(
-                      children:[
-                        SizedBox(width:40),
-                        Text(
-                          'today at 5:47',style:TextStyle(
-                          color:Colors.grey,fontSize:20,
-                        ),
-                        ),
-                      ],
                     ),
-                  ],
+                    subtitle: Text(
+                      'today at 4:30am',
+                    ),
+                    trailing:CircleAvatar(
+                      radius:15,
+                      backgroundColor: Colors.red,
+                      child:Text('3',style:TextStyle(
+                        color:Colors.black,
+                        fontSize:10,
+                      ),),
+                    ),
+                  ),
                 ),
-              ],
-            ),
-            Divider(thickness:0.5,color:Colors.grey,),
-            Row(
-              children:[
-                Row(
-                  children:[
-                    CircleAvatar(
+
+                Card(
+                  child:ListTile(
+                    leading:CircleAvatar(
                       radius:20,
                       backgroundImage:AssetImage('assets/hijab.jpg'),
                     ),
-                  ],
-                ),
-                Column(
-                  children:[
-                    Row(
-                      children:[
-                        SizedBox(width:10),
-                        Text(
-                          'faria',style:TextStyle(
-                          color:Colors.black,fontWeight:FontWeight.bold,
-                          fontSize:20,
-                        ),
-                        ),
-                      ],
+                    title:Text(
+                      'Faria',style:TextStyle(
+                      color:Colors.black,
+                      fontSize:20,
+                      fontWeight:FontWeight.bold,
                     ),
-                    SizedBox(height:5),
-                    Row(
-                      children:[
-                        SizedBox(width:40),
-                        Text(
-                          'today at 7:34',style:TextStyle(
-                          color:Colors.grey,fontSize:20,
-                        ),
-                        ),
-                      ],
                     ),
-                  ],
+                    subtitle: Text(
+                      'today at 4:30am',
+                    ),
+                    trailing:CircleAvatar(
+                      radius:15,
+                      backgroundColor: Colors.red,
+                      child:Text('3',style:TextStyle(
+                        color:Colors.black,
+                        fontSize:10,
+                      ),),
+                    ),
+                  ),
                 ),
-              ],
-            ),
-            Divider(thickness:0.5,color:Colors.grey,),
-            Row(
-              children:[
-                Row(
-                  children:[
-                    CircleAvatar(
+                Card(
+                  child:ListTile(
+                    leading:CircleAvatar(
                       radius:20,
                       backgroundImage:AssetImage('assets/girl8.jpg'),
                     ),
-                  ],
-                ),
-                Column(
-                  children:[
-                    Row(
-                      children:[
-                        SizedBox(width:10),
-                        Text(
-                          'Sana',style:TextStyle(
-                          color:Colors.black,fontWeight:FontWeight.bold,
-                          fontSize:20,
-                        ),
-                        ),
-                      ],
+                    title:Text(
+                      'Sana',style:TextStyle(
+                      color:Colors.black,
+                      fontSize:20,
+                      fontWeight:FontWeight.bold,
                     ),
-                    SizedBox(height:5),
-                    Row(
-                      children:[
-                        SizedBox(width:40),
-                        Text(
-                          'today at 7:38',style:TextStyle(
-                          color:Colors.grey,fontSize:20,
-                        ),
-                        ),
-                      ],
                     ),
-                  ],
+                    subtitle: Text(
+                      'today at 4:30am',
+                    ),
+                    trailing:CircleAvatar(
+                      radius:15,
+                      backgroundColor: Colors.red,
+                      child:Text('3',style:TextStyle(
+                        color:Colors.black,
+                        fontSize:10,
+                      ),),
+                    ),
+                  ),
                 ),
-              ],
-            ),
-            Divider(thickness:0.5,color:Colors.grey,),
-            Row(
-              children:[
-                Row(
-                  children:[
-                    CircleAvatar(
+                Card(
+                  child:ListTile(
+                    leading:CircleAvatar(
                       radius:20,
                       backgroundImage:AssetImage('assets/hq720.jpg'),
                     ),
-                  ],
-                ),
-                Column(
-                  children:[
-                    Row(
-                      children:[
-                        SizedBox(width:10),
-                        Text(
-                          'Rukhsar',style:TextStyle(
-                          color:Colors.black,fontWeight:FontWeight.bold,
-                          fontSize:20,
-                        ),
-                        ),
-                      ],
+                    title:Text(
+                      'FoodFusion',style:TextStyle(
+                      color:Colors.black,
+                      fontSize:20,
+                      fontWeight:FontWeight.bold,
                     ),
-                    SizedBox(height:5),
-                    Row(
-                      children:[
-                        SizedBox(width:40),
-                        Text(
-                          'today at 7:44',style:TextStyle(
-                          color:Colors.grey,fontSize:20,
-                        ),
-                        ),
-                      ],
                     ),
-                  ],
+                    subtitle: Text(
+                      'today at 4:30am',
+                    ),
+                    trailing:CircleAvatar(
+                      radius:15,
+                      backgroundColor: Colors.red,
+                      child:Text('3',style:TextStyle(
+                        color:Colors.black,
+                        fontSize:10,
+                      ),),
+                    ),
+                  ),
                 ),
-              ],
-            ),
-            Divider(thickness:0.5,color:Colors.grey,),
-            Row(
-              children:[
-                Row(
-                  children:[
-                    CircleAvatar(
+                Card(
+                  child:ListTile(
+                    leading:CircleAvatar(
                       radius:20,
                       backgroundImage:AssetImage('assets/beutifull.jpg'),
                     ),
-                  ],
-                ),
-                Column(
-                  children:[
-                    Row(
-                      children:[
-                        SizedBox(width:10),
-                        Text(
-                          'Shazii',style:TextStyle(
-                          color:Colors.black,fontWeight:FontWeight.bold,
-                          fontSize:20,
-                        ),
-                        ),
-                      ],
+                    title:Text(
+                      'Shazii',style:TextStyle(
+                      color:Colors.black,
+                      fontSize:20,
+                      fontWeight:FontWeight.bold,
                     ),
-                    SizedBox(height:5),
-                    Row(
-                      children:[
-                        SizedBox(width:40),
-                        Text(
-                          'today at 4:34',style:TextStyle(
-                          color:Colors.grey,fontSize:20,
-                        ),
-                        ),
-                      ],
                     ),
-                  ],
+                    subtitle: Text(
+                      'today at 4:30am',
+                    ),
+                    trailing:CircleAvatar(
+                      radius:15,
+                      backgroundColor: Colors.red,
+                      child:Text('3',style:TextStyle(
+                        color:Colors.black,
+                        fontSize:10,
+                      ),),
+                    ),
+                  ),
                 ),
-              ],
-            ),
-            Divider(thickness:0.5,color:Colors.grey,),
-            Row(
-              children:[
-                Row(
-                  children:[
-                    CircleAvatar(
+                Card(
+                  child:ListTile(
+                    leading:CircleAvatar(
                       radius:20,
                       backgroundImage:AssetImage('assets/girl.jpg'),
                     ),
-                  ],
-                ),
-                Column(
-                  children:[
-                    Row(
-                      children:[
-                        SizedBox(width:10),
-                        Text(
-                          'Farisa',style:TextStyle(
-                          color:Colors.black,fontWeight:FontWeight.bold,
-                          fontSize:20,
-                        ),
-                        ),
-                      ],
+                    title:Text(
+                      'Farisaa',style:TextStyle(
+                      color:Colors.black,
+                      fontSize:20,
+                      fontWeight:FontWeight.bold,
                     ),
-                    SizedBox(height:5),
-                    Row(
-                      children:[
-                        SizedBox(width:40),
-                        Text(
-                          'today at 8:34',style:TextStyle(
-                          color:Colors.grey,fontSize:20,
-                        ),
-                        ),
-                      ],
                     ),
-                  ],
+                    subtitle: Text(
+                      'today at 4:30am',
+                    ),
+                    trailing:CircleAvatar(
+                      radius:15,
+                      backgroundColor: Colors.red,
+                      child:Text('3',style:TextStyle(
+                        color:Colors.black,
+                        fontSize:10,
+                      ),),
+                    ),
+                  ),
                 ),
-              ],
-            ),
-            Divider(thickness:0.5,color:Colors.grey,),
-            Row(
-              children:[
-                Row(
-                  children:[
-                    CircleAvatar(
+                Card(
+                  child:ListTile(
+                    leading:CircleAvatar(
                       radius:20,
                       backgroundImage:AssetImage('assets/boy2.jpg'),
                     ),
-                  ],
-                ),
-                Column(
-                  children:[
-                    Row(
-                      children:[
-                        SizedBox(width:10),
-                        Text(
-                          'Maniii',style:TextStyle(
-                          color:Colors.black,fontWeight:FontWeight.bold,
-                          fontSize:20,
-                        ),
-                        ),
-                      ],
+                    title:Text(
+                      'Manii',style:TextStyle(
+                      color:Colors.black,
+                      fontSize:20,
+                      fontWeight:FontWeight.bold,
                     ),
-                    SizedBox(height:5),
-                    Row(
-                      children:[
-                        SizedBox(width:40),
-                        Text(
-                          'today at 9:34',style:TextStyle(
-                          color:Colors.grey,fontSize:20,
-                        ),
-                        ),
-                      ],
                     ),
-                  ],
+                    subtitle: Text(
+                      'today at 4:30am',
+                    ),
+                    trailing:CircleAvatar(
+                      radius:15,
+                      backgroundColor: Colors.red,
+                      child:Text('3',style:TextStyle(
+                        color:Colors.black,
+                        fontSize:10,
+                      ),),
+                    ),
+                  ),
                 ),
+                Card(
+                  child:ListTile(
+                    leading:CircleAvatar(
+                      radius:20,
+                      backgroundImage:AssetImage('assets/boy7.jpg'),
+                    ),
+                    title:Text(
+                      'Umair',style:TextStyle(
+                      color:Colors.black,
+                      fontSize:20,
+                      fontWeight:FontWeight.bold,
+                    ),
+                    ),
+                    subtitle: Text(
+                      'today at 4:30am',
+                    ),
+                    trailing:CircleAvatar(
+                      radius:15,
+                      backgroundColor: Colors.red,
+                        child:Text('3',style:TextStyle(
+                          color:Colors.black,
+                          fontSize:10,
+                        ),),
+                    ),
+                  ),
+                ),
+            Row(
+              children:
+                [
+                  Padding(
+                    padding: const EdgeInsets.all(20.0),
+                    child: Container(
+                      height:40,
+                      width:120,
+                      decoration: BoxDecoration(
+                        color:Colors.white,
+                        borderRadius: BorderRadius.circular(20),
+                        border:Border.all(width:1,color:Colors.black,)
+                      ),
+                      child:Center(
+                        child:Text('Explore more',style:TextStyle(
+                          color:Colors.green,
+                          fontSize:15,
+                          fontWeight:FontWeight.bold,
+                        ))
+                      ),
+                    ),
+                  ),
+                  SizedBox(height:300),
+                ]
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children:[
+                Icon(Icons.chat_sharp,color:Colors.black,size:20),
+                Icon(Icons.update_sharp,color:Colors.black,size:20),
+                Icon(Icons.person_add_alt_sharp,color:Colors.black,size:20),
+                Icon(Icons.call,color:Colors.black,size:20),
               ],
             ),
-            Card(
-              child:ListTile(
-                leading:CircleAvatar(
-                  radius:30,
-                  backgroundImage:AssetImage('assets/beutifull.jpg'),
-                ),
-                title:Text(
-                  'Umair',style:TextStyle(
-                  color:Colors.black,
-                  fontSize:20,
-                  fontWeight:FontWeight.bold,
-                ),
-                ),
-                subtitle: Text(
-                  'today at 4:30am',
-                ),
-                trailing:CircleAvatar(
-                  radius:15,
-                  backgroundColor: Colors.red,
-                    child:Text('3',style:TextStyle(
-                      color:Colors.black,
-                      fontSize:10,
-                    ),),
-                ),
-              ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children:[
+             Text('Chats',style:TextStyle(
+               color:Colors.black,fontSize:15,fontWeight:FontWeight.bold,
+             )),
+                Text('Updates',style:TextStyle(
+                  color:Colors.black,fontSize:15,fontWeight:FontWeight.bold,
+                )),
+                Text('Communities',style:TextStyle(
+                  color:Colors.black,fontSize:15,fontWeight:FontWeight.bold,
+                )),
+                Text('Calls',style:TextStyle(
+                  color:Colors.black,fontSize:15,fontWeight:FontWeight.bold,
+                )),
+              ],
             ),
-          ],
-        ),
-
+        ],
       ),
+    ),
     );
   }
 }
