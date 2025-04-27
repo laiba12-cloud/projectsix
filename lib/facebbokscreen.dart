@@ -31,6 +31,7 @@ class _FaceBookScreenState extends State<FaceBookScreen> {
       ),
       body:SingleChildScrollView(
         child:Column(
+          mainAxisAlignment:MainAxisAlignment.start,
           children: [
             Row
               (
@@ -448,6 +449,32 @@ class _FaceBookScreenState extends State<FaceBookScreen> {
                   ],
                 ),
               ],
+            ),
+            Card(
+              child:ListTile(
+                leading:CircleAvatar(
+                  radius:30,
+                  backgroundImage:AssetImage('assets/beutifull.jpg'),
+                ),
+                title:Text(
+                  'Umair',style:TextStyle(
+                  color:Colors.black,
+                  fontSize:20,
+                  fontWeight:FontWeight.bold,
+                ),
+                ),
+                subtitle: Text(
+                  'today at 4:30am',
+                ),
+                trailing:CircleAvatar(
+                  radius:15,
+                  backgroundColor: Colors.red,
+                    child:Text('3',style:TextStyle(
+                      color:Colors.black,
+                      fontSize:10,
+                    ),),
+                ),
+              ),
             ),
           ],
         ),
