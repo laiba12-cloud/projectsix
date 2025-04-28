@@ -11,6 +11,12 @@ class _WhatsAppCallState extends State<WhatsAppCall> {
   Widget build(BuildContext context) {
     return Scaffold(
 backgroundColor: Colors.white,
+        floatingActionButton: FloatingActionButton(
+          backgroundColor: Colors.green,
+          onPressed:(){
+          },
+          child:Icon(Icons.add_call,color:Colors.white,size:20,)
+        ),
         appBar:AppBar(
           title:Text(
             'Calls',style:TextStyle(color:Colors.black,fontSize:20,fontWeight:FontWeight.bold),
@@ -174,6 +180,53 @@ backgroundColor: Colors.white,
               ),
               trailing:Icon(Icons.video_call,)
           ),
+
+          Row(
+            mainAxisAlignment:MainAxisAlignment.spaceEvenly ,
+            children:[
+              Icon(Icons.message_outlined,size:20,),
+
+
+              Icon(Icons.update,size:20),
+
+
+              Icon(Icons.person_add_alt_sharp,size:20),
+
+              Icon(Icons.call,size:20,color:Colors.green,),
+            ],
+          ),
+          SizedBox(height:5),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children:[
+              Text(
+                'Chats',style:TextStyle(
+                color:Colors.black,
+                fontWeight:FontWeight.bold,fontSize:10,
+              ),
+              ),
+
+              Text(
+                'Updates',style:TextStyle(
+                color:Colors.black,
+                fontWeight:FontWeight.bold,fontSize:10,
+              ),
+              ),
+              Text(
+                'Communities',style:TextStyle(
+                color:Colors.black,
+                fontWeight:FontWeight.bold,fontSize:10,
+              ),
+              ),
+
+              Text(
+                'Calls',style:TextStyle(
+                color:Colors.black,
+                fontWeight:FontWeight.bold,fontSize:10,
+              ),
+              ),
+            ],
+          )
         ],
       ),
       ),

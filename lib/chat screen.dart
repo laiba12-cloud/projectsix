@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:projectsix/contact%20list.dart';
 import 'package:projectsix/contactlist.dart';
 import 'package:projectsix/update%20screen.dart';
 
@@ -13,7 +14,7 @@ class _WhatsAppScreenState extends State<WhatsAppScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.white,
       floatingActionButton:
       Column(
         mainAxisAlignment:MainAxisAlignment.end,
@@ -53,6 +54,10 @@ class _WhatsAppScreenState extends State<WhatsAppScreen> {
           FloatingActionButton(
             backgroundColor: Colors.green,
             onPressed:(){
+              Navigator.push(context,
+              MaterialPageRoute(builder:(context)=>WhatsappContact()
+              )
+              );
             },
             child:Icon(Icons.add_box,color:Colors.white,size:40,),
           ),
@@ -338,7 +343,7 @@ class _WhatsAppScreenState extends State<WhatsAppScreen> {
               Row(
                 mainAxisAlignment:MainAxisAlignment.spaceEvenly ,
                 children:[
-                  Icon(Icons.message_outlined,size:20,),
+                  Icon(Icons.message_outlined,size:20,color: Colors.green,),
 
 
                   Icon(Icons.update,size:20),
@@ -346,7 +351,7 @@ class _WhatsAppScreenState extends State<WhatsAppScreen> {
 
                   Icon(Icons.person_add_alt_sharp,size:20),
 
-                  Icon(Icons.call,size:20),
+                  Icon(Icons.call,size:20,),
                 ],
               ),
               SizedBox(height:5),

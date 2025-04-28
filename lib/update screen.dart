@@ -652,7 +652,7 @@ class UpdateScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children:[
                 Icon(Icons.chat_sharp,color:Colors.black,size:20),
-                Icon(Icons.update_sharp,color:Colors.black,size:20),
+                Icon(Icons.update_sharp,color:Colors.green,size:20),
                 Icon(Icons.person_add_alt_sharp,color:Colors.black,size:20),
                 Icon(Icons.call,color:Colors.black,size:20),
               ],
