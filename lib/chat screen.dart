@@ -33,7 +33,6 @@ class _WhatsAppScreenState extends State<WhatsAppScreen> {
           ),
           SizedBox(height:10),
           FloatingActionButton(
-            backgroundColor: Colors.white,
             //   shape:SizedBox.shrink(),
             onPressed:(){
 
@@ -46,7 +45,7 @@ class _WhatsAppScreenState extends State<WhatsAppScreen> {
                 height:46,
                 width:46,
                 decoration:BoxDecoration(
-                  image:DecorationImage(image: AssetImage('assets/meta.jfif'),fit:BoxFit.cover,
+                  image:DecorationImage(image: AssetImage('assets/meta2.jfif'),fit:BoxFit.cover,
                   ),
                 )
             ),
