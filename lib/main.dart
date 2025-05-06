@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart' show BuildContext, MaterialApp, StatelessWidget, Widget, runApp;
 import 'package:projectsix/chat%20screen.dart';
+import 'package:projectsix/sir%20send.dart';
 import 'package:projectsix/update%20screen.dart';
 
 
@@ -16,7 +17,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
 debugShowCheckedModeBanner:false,
-     home:WhatsAppScreen()
+     home:NewIdea()
+      //WhatsAppScreen()
       //UpdateScreen()
     );
   }
